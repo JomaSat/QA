@@ -1,0 +1,106 @@
+.AnimeDetail {
+    padding-top: 80px;
+}
+.AnimeDetail_content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.imag_detail {
+    width: 200px;
+    height: 280px;
+}
+.detail_info {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    margin-left: 10px;
+}
+.AnimeDetail__description {
+    width: 690px;
+    white-space: pre-line;
+    color: #fff;
+}
+.AnimeDetail__title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0px 0 15px 0;
+}
+.genres_btn {
+    display: flex;
+}
+.AnimeDetail__genres {
+    margin: 20px;
+    width: 70px;
+    padding: 3px;
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+    background: #034243;
+}
+video {
+    width: 100%;
+    max-width: 100%; /* Гарантирует, что видео не будет шире родительского контейнера */
+    height: auto; /* Поддерживает соотношение сторон оригинального видео */
+    display: block; /* Устанавливает видео как блочный элемент */
+    margin: 50px 0;
+  }
+  
+
+  
+  /* Свои собственные стили для контролов видео */
+  video-controls {
+    background-color: rgba(0, 0, 0, 0.7); /* Фон контролов с небольшой прозрачностью */
+    color: white; /* Цвет значков и текста контролов */
+    padding: 10px; /* Поля вокруг контролов */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Позволяет контролам находиться поверх видео */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Стили для кнопок в контролах */
+  video-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 0;
+  }
+  
+  /* Стили для времени в контролах */
+  video-controls span {
+    font-size: 0.8rem;
+  }
+  
+
+  @media screen and (max-width:930PX) {
+    .AnimeDetail__description {
+        font-size: 13px;
+        width: 450px;
+    }
+    .imag_detail {
+        margin-top: 20px;
+        width: 200px;
+        height: 280px;
+    }
+  }
+  @media screen and (max-width:690PX) {
+    .AnimeDetail__description {
+        font-size: 13px;
+        width: auto;
+    }
+    .imag_detail {
+        display: none;
+    }
+    .AnimeDetail_content {
+        display: block;
+    }
+  }

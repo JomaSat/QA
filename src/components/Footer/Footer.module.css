@@ -1,0 +1,40 @@
+.copyright {
+    color: #a0a0a0;
+    font-size: 18px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+.icon_list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footer_icon {
+    display: flex;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    font-size: 22px;
+}
+
+
+@media screen and (max-width: 550px) {
+    .copyright {
+        font-size: 16px;
+    }
+    .footer_icon {
+        width: 22px;
+        height: 22px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .copyright {
+        font-size: 14px;
+    }
+    .footer_icon {
+        width: 19px;
+        height: 19px;
+    }
+}
